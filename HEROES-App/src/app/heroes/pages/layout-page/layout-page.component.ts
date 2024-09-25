@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UrlHandlingStrategy } from '@angular/router';
 
 @Component({
   selector: 'app-layout-page',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   ]
 })
 export class LayoutPageComponent {
+
+  public sidebarItems = [
+    {label:'listado',icon:'label',Url:'./list'},
+    {label:'añadir',icon:'add',Url:'./new-hero'},
+    {label:'buscar',icon:'search',Url:'./search'},
+  ]
 
 }
